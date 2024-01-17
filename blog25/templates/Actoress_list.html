@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>now we connected through database</h1>
+<h2>Actoress list page</h2>
+
+{{Ar}}
+
+{% for i in Ar%}
+
+<h2><a href="{% url 'actoress_details' pk=i.pk %}">{{ i.Actoress_name }}</a></h2>
+<h1>{{i.Actoress_name}}</h1>
+<br>
+<p>{{i.Actoress_des}}</p>
+{% endfor %}
+</body>
+</html>
