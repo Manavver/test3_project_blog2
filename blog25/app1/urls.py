@@ -7,3 +7,5 @@ urlpatterns = [
     path('Actor/<int:pk>/', views.Actor_details, name='actor_details'),
     path('Actor/<int:pk>/delete/', views.delete_actor, name='del_actor'),
 ]
+
+# we are in app one url-------
